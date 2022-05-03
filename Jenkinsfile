@@ -3,8 +3,11 @@ pipeline {
    stages
    {
       stage('credential')
+      {
+      steps
       { 
           GitHubUser = credentials('git')  
+      }
       }
       stage('Checkout')
       {
@@ -15,3 +18,6 @@ pipeline {
       }
    }
 }
+
+
+
