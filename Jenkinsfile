@@ -2,13 +2,6 @@ pipeline {
    agent any 
    stages
    {
-      stage('credential')
-      {
-      steps
-      { 
-          GitHubUser = credentials('git')  
-      }
-      }
       stage('Checkout')
       {
          steps
