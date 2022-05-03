@@ -2,8 +2,7 @@ pipeline {
    agent any
    environment 
    { 
-       // replace xyz with the copy pasted iD
-       GitHubUser = credentials('xyz')  
+       GitHubUser = credentials('git')  
    }
    stage('Checkout')
    {
