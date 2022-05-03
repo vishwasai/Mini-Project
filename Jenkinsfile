@@ -6,8 +6,9 @@ pipeline {
    }
    stage('Checkout')
    {
-   steps
-   {  
-      git credentialsId: 'git', url: 'git@github.com:vishwasai/MiniProject.git'
+      steps
+      {  
+          git credentialsId: 'git', url: 'git@github.com:vishwasai/MiniProject.git'
+      }
    }
 }
