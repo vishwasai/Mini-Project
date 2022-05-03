@@ -9,6 +9,6 @@ pipeline {
    {
    steps
    {  
-      bat "git clone http://$GitHubUser_USR:$GitHubUser_PSW@example.com/project.git"
+      git credentialsId: 'git', url: 'git@github.com:vishwasai/MiniProject.git'
    }
 }
